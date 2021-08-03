@@ -1,10 +1,9 @@
 const delay = (ms) => {
-  const time = ms;
   return new Promise((resolve, reject) => {
     setTimeout(() => {
-      resolve(time);
+      resolve(ms);
       reject();
-    }, time);
+    }, ms);
   });
 };
 
